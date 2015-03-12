@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Devopensource_ViewPendingPayment>
+            <version>0.1.0</version>
+        </Devopensource_ViewPendingPayment>
+    </modules>
+    <global>
+        <helpers>
+            <devopensource_viewpendingpayment>
+                <class>Devopensource_ViewPendingPayment_Helper</class>
+            </devopensource_viewpendingpayment>
+        </helpers>
+        <sales>
+            <order>
+                <states>
+                    <pending_payment translate="label">
+                        <label>Pending Payment</label>
+                        <statuses>
+                            <pending_payment default="1"/>
+                        </statuses>
+                        <visible_on_front>1</visible_on_front>
+                    </pending_payment>
+                </states>
+            </order>
+        </sales>
+    </global>
+</config>
